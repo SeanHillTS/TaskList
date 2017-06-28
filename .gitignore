@@ -32,6 +32,6 @@ _ReSharper*/
 packages/
 node_modules/
 app.component.js
-app.module.js
+*.module.js
 *.map
 main.js
