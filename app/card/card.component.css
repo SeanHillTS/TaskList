@@ -1,5 +1,6 @@
 .card{
     border-radius: 0;
+    cursor: pointer;
 }
 
 .card,
@@ -7,12 +8,32 @@
     background-color: #FFFFA5;
     border: none;
 }
-
+.card .delete{
+    opacity: 0;
+    padding: .5rem;
+    float:right;
+}
+.card .delete:hover{
+    opacity: 1;
+}
 .card-footer{
     text-align: right;
 }
 
-i {
-    color: #CC0000;
+.card.completed,
+.card.completed .card-footer{
+    background-color: #EEE;
+    color: #CCC;
+}
+
+i{
     padding-right: 0.5rem;
+}
+
+i.fa-times{
+    color: #CC0000;
+}
+
+i.fa-check{
+    color: green;
 }

@@ -10,5 +10,9 @@
             </form>
         </div>
     </div>
-    <app-card *ngFor="let task of tasks" [task]=task></app-card>
+    <app-card *ngFor="let task of tasks" [hidden]="task.deleted" [task]=task></app-card>
+    <h5 *ngIf=" tasks.length == 0"> 
+        <p>The task list is empty</p>
+        <p>Add new tasks with the form above</p>
+    </h5>
 </div>

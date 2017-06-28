@@ -11,4 +11,13 @@ import { Component, Input } from '@angular/core';
 })
 export class CardComponent{
    @Input() task: Task;
+
+   statusToggle(){
+       this.task.completed = !this.task.completed;
+   }
+
+   softDelete(){
+       console.log("Yeyey");
+       this.task.deleted = true;
+   }
 }

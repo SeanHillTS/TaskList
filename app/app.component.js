@@ -12,16 +12,7 @@ var task_1 = require('./model/task');
 var core_1 = require('@angular/core');
 var AppComponent = (function () {
     function AppComponent() {
-        this.tasks = [
-            {
-                content: "lrn2code",
-                completed: true
-            },
-            {
-                content: "Get some work",
-                completed: false
-            }
-        ];
+        this.tasks = [];
         this.currentTask = new task_1.Task(null, false);
     }
     AppComponent.prototype.addTask = function () {

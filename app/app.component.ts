@@ -10,16 +10,7 @@ import {Component} from '@angular/core';
      ]
  })
  export class AppComponent{
-     private tasks: Task[] = [
-        {
-            content: "lrn2code",
-            completed: true
-        },
-        {
-            content: "Get some work",
-            completed: false
-        }
-     ]
+     private tasks: Task[] = [];
 
      private currentTask : Task = new Task(null,false);
 

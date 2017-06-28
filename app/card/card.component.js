@@ -13,6 +13,13 @@ var core_1 = require('@angular/core');
 var CardComponent = (function () {
     function CardComponent() {
     }
+    CardComponent.prototype.statusToggle = function () {
+        this.task.completed = !this.task.completed;
+    };
+    CardComponent.prototype.softDelete = function () {
+        console.log("Yeyey");
+        this.task.deleted = true;
+    };
     __decorate([
         core_1.Input(), 
         __metadata('design:type', task_1.Task)

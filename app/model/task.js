@@ -3,6 +3,7 @@ var Task = (function () {
     function Task(content, completed) {
         this.content = content;
         this.completed = completed;
+        this.deleted = false;
     }
     return Task;
 }());
