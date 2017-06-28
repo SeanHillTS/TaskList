@@ -8,9 +8,10 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var app_component_1 = require('./app.component');
 var core_1 = require('@angular/core');
 var platform_browser_1 = require('@angular/platform-browser');
+var app_component_1 = require('./app.component');
+var card_component_1 = require('./card/card.component');
 //The decorator
 var AppModule = (function () {
     function AppModule() {
@@ -19,7 +20,7 @@ var AppModule = (function () {
         core_1.NgModule({
             imports: [platform_browser_1.BrowserModule],
             //Declarations are self-defined components in ypur app
-            declarations: [app_component_1.AppComponent],
+            declarations: [app_component_1.AppComponent, card_component_1.CardComponent],
             //Bootstrap to the root
             bootstrap: [app_component_1.AppComponent]
         }), 
