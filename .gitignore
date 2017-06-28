@@ -31,3 +31,7 @@ _ReSharper*/
 #Nuget packages folder
 packages/
 node_modules/
+app.component.js
+app.module.js
+*.map
+main.js
